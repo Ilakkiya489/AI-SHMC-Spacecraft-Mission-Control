@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Project dependencies & cache
+.deps/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Database & Runtime logs
+data/ai_shmc.db
+*.log
+
+# Models & Large Artefacts
+models/*.joblib
+!models/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+

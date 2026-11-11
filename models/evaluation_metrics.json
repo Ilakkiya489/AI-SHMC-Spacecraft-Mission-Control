@@ -1,0 +1,395 @@
+{
+  "anomaly_detection": {
+    "ml_model": {
+      "name": "Isolation Forest",
+      "accuracy": 0.4884,
+      "precision": 0.4576,
+      "recall": 0.9974,
+      "f1_score": 0.6274,
+      "confusion_matrix": [
+        [
+          104,
+          922
+        ],
+        [
+          2,
+          778
+        ]
+      ]
+    },
+    "threshold_baseline": {
+      "name": "Statistical Threshold Monitor",
+      "accuracy": 0.8782,
+      "precision": 0.8004,
+      "recall": 0.9564,
+      "f1_score": 0.8715,
+      "confusion_matrix": [
+        [
+          840,
+          186
+        ],
+        [
+          34,
+          746
+        ]
+      ]
+    },
+    "f1_improvement_pct": -28.01
+  },
+  "fault_diagnosis": {
+    "name": "Random Forest Classifier",
+    "accuracy": 0.6622,
+    "weighted_precision": 0.9494,
+    "weighted_recall": 0.6622,
+    "weighted_f1_score": 0.7191,
+    "classes": [
+      "Battery Overheating",
+      "Battery Voltage Drop",
+      "CPU Overload",
+      "Communication Packet Loss",
+      "Communication Signal Loss",
+      "Memory Exhaustion",
+      "Multiple Subsystem Faults",
+      "Nominal",
+      "Payload Malfunction",
+      "Solar Panel Degradation",
+      "Storage Overflow"
+    ],
+    "confusion_matrix": [
+      [
+        78,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        76,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        78,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        78,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        78,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        78,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        78,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        418,
+        580,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        78,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        78,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        78
+      ]
+    ],
+    "classification_report": {
+      "Battery Overheating": {
+        "precision": 0.7358490566037735,
+        "recall": 1.0,
+        "f1-score": 0.8478260869565216,
+        "support": 78.0
+      },
+      "Battery Voltage Drop": {
+        "precision": 1.0,
+        "recall": 0.9743589743589743,
+        "f1-score": 0.9870129870129869,
+        "support": 78.0
+      },
+      "CPU Overload": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 78.0
+      },
+      "Communication Packet Loss": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 78.0
+      },
+      "Communication Signal Loss": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 78.0
+      },
+      "Memory Exhaustion": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 78.0
+      },
+      "Multiple Subsystem Faults": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 78.0
+      },
+      "Nominal": {
+        "precision": 1.0,
+        "recall": 0.4074074074074074,
+        "f1-score": 0.5789473684210525,
+        "support": 1026.0
+      },
+      "Payload Malfunction": {
+        "precision": 0.11854103343465046,
+        "recall": 1.0,
+        "f1-score": 0.21195652173913046,
+        "support": 78.0
+      },
+      "Solar Panel Degradation": {
+        "precision": 0.975,
+        "recall": 1.0,
+        "f1-score": 0.9873417721518987,
+        "support": 78.0
+      },
+      "Storage Overflow": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 78.0
+      },
+      "accuracy": 0.6622369878183831,
+      "macro avg": {
+        "precision": 0.8935809172762205,
+        "recall": 0.9437969437969439,
+        "f1-score": 0.8739167942074174,
+        "support": 1806.0
+      },
+      "weighted avg": {
+        "precision": 0.9494420969119585,
+        "recall": 0.6622369878183831,
+        "f1-score": 0.7190823447913188,
+        "support": 1806.0
+      }
+    }
+  },
+  "predictive_analytics": {
+    "horizon_1m": {
+      "battery_temperature": {
+        "mae": 7.607,
+        "rmse": 10.563,
+        "r2_score": -0.409
+      },
+      "battery_voltage": {
+        "mae": 0.685,
+        "rmse": 0.902,
+        "r2_score": -0.135
+      },
+      "cpu_temperature": {
+        "mae": 39.204,
+        "rmse": 40.135,
+        "r2_score": -1.169
+      },
+      "power_consumption": {
+        "mae": 16.642,
+        "rmse": 28.541,
+        "r2_score": -0.076
+      },
+      "signal_strength": {
+        "mae": 3.443,
+        "rmse": 8.299,
+        "r2_score": -0.034
+      }
+    },
+    "horizon_3m": {
+      "battery_temperature": {
+        "mae": 7.348,
+        "rmse": 10.345,
+        "r2_score": -0.359
+      },
+      "battery_voltage": {
+        "mae": 0.666,
+        "rmse": 0.878,
+        "r2_score": -0.07
+      },
+      "cpu_temperature": {
+        "mae": 38.972,
+        "rmse": 39.832,
+        "r2_score": -1.125
+      },
+      "power_consumption": {
+        "mae": 15.639,
+        "rmse": 28.259,
+        "r2_score": -0.049
+      },
+      "signal_strength": {
+        "mae": 3.648,
+        "rmse": 8.305,
+        "r2_score": -0.042
+      }
+    },
+    "horizon_5m": {
+      "battery_temperature": {
+        "mae": 6.893,
+        "rmse": 9.994,
+        "r2_score": -0.263
+      },
+      "battery_voltage": {
+        "mae": 0.671,
+        "rmse": 0.895,
+        "r2_score": -0.12
+      },
+      "cpu_temperature": {
+        "mae": 39.079,
+        "rmse": 39.978,
+        "r2_score": -1.138
+      },
+      "power_consumption": {
+        "mae": 15.975,
+        "rmse": 28.45,
+        "r2_score": -0.057
+      },
+      "signal_strength": {
+        "mae": 3.692,
+        "rmse": 8.29,
+        "r2_score": -0.032
+      }
+    },
+    "horizon_10m": {
+      "battery_temperature": {
+        "mae": 7.325,
+        "rmse": 10.331,
+        "r2_score": -0.343
+      },
+      "battery_voltage": {
+        "mae": 0.64,
+        "rmse": 0.857,
+        "r2_score": -0.029
+      },
+      "cpu_temperature": {
+        "mae": 38.099,
+        "rmse": 39.173,
+        "r2_score": -1.041
+      },
+      "power_consumption": {
+        "mae": 16.594,
+        "rmse": 28.963,
+        "r2_score": -0.091
+      },
+      "signal_strength": {
+        "mae": 4.41,
+        "rmse": 8.562,
+        "r2_score": -0.083
+      }
+    }
+  }
+}
